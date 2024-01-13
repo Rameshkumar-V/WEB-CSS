@@ -1,0 +1,46 @@
+*
+{
+    margin:0;
+    padding: 0;
+}
+
+.loader
+{
+    height:100vh;
+    width:100vw;
+    background-color: green;
+    text-align: center;
+    padding: 50px;
+
+}
+.spinner
+{
+    height: 50px;
+    width: 50px;
+   border-radius: 50%;
+   border: 4px;
+   border-style: solid;
+   border-color:aquamarine;
+   border-top: 4px;
+   border-top-color: white;;
+   border-top-style: dashed;
+   margin-left: 50%;
+   /* FOR SPINNER ANIMATION */
+
+   transition-property: transform;
+   animation-name: spinner-rotate;
+   animation-duration: 3s;
+   animation-iteration-count: infinite; \\FOR HOW MANY TIMES EVENT OCCUR
+   animation-timing-function: ease; \\ SAME AS IN AND output
+
+}
+
+@keyframes spinner-rotate
+{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
