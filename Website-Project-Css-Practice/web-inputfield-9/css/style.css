@@ -1,0 +1,35 @@
+
+input{
+    height: 20px;
+    width: 80px;
+    border-width: 10px;
+    border-color: green;
+    border-radius: 10px;
+    border-left: transparent;
+    border-right: transparent;
+}
+input:invalid{
+    border: 5px solid red;
+    animation-name: shakeit;
+    animation-duration: 2s;
+    animation-range: 2;
+}
+
+@keyframes shakeit{
+    0%{
+        transform: translateX(5px);
+    }
+    50%
+    {
+        
+        transform: translatey(5px);
+    }
+    80%{
+        
+        transform: translateX(-5px);
+    }
+    100%{
+        
+        transform: translateY(-5px);
+    }
+}

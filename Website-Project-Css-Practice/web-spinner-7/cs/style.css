@@ -1,0 +1,23 @@
+.spinner{
+    
+    height: 80px;
+   width: 80px;
+   
+   border-style: solid;
+   border-color: #000;
+   border-radius: 50%;
+   border-color: black transparent;
+   animation-name: spinning;
+   animation: spinning 2s ease infinite;
+}
+
+@keyframes spinning {
+    100% { transform: rotate(360deg); }
+    
+}
+body{
+    display:flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+align-content:center;}
